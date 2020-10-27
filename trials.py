@@ -31,30 +31,58 @@ def print_as_numbered_list(items):
 
     item_num = 1
     for item in items:
-       
+
         print(f' {item_num}. {item}')
         item_num += 1
 
 
-print(print_as_numbered_list(['bird', 'pear tree', 'gift', 'coffee']))
-#
+# print(print_as_numbered_list(['bird', 'pear tree', 'gift', 'coffee']))
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+    num_lst = []
+
+    for num in range(start, stop):
+        num_lst.append(num)
+
+    return num_lst
 
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
+
+    vowels_censor = []
+
+    for letter in word:
+        if letter in "aeiou":
+            vowels_censor.append('*')
+        else:
+            vowels_censor.append(letter)
+
+    return ''.join(vowels_censor)
 
 
 def snake_to_camel(string):
-    pass  # TODO: replace this line with your code
+    converted_to_camel = []
+
+    # split_string = string.split('_')
+    # for word in split_string:
+    #     upper_cased = f"{word[0].upper()}{word[1:]}"
+    #     converted_to_camel.append(upper_cased)
+
+    for word in string.split('_'):
+        converted_to_camel.append(f"{word[0].upper()}{word[1:]}")
+
+    return ''.join(converted_to_camel)
 
 
 def longest_word_length(words):
-    pass  # TODO: replace this line with your code
+    longest = len(words[0])
+    
+    for word in words:
+        if len(word) > longest:
+            longest = len(word)
 
+    return longest
 
 def truncate(string):
     pass  # TODO: replace this line with your code

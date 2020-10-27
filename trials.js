@@ -84,6 +84,8 @@ function getRange(start, stop) {
   for (let num = start; num < stop; num += 1) {
     nums.push(num);
   }
+
+  return nums;
 }
 
 
