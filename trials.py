@@ -17,18 +17,27 @@ def get_all_evens(nums):
 
 
 def get_odd_indices(items):
-    
-    odd_indecies_num = []
+
+    odd_indices_num = []
 
     for index in range(len(items)):
         if index % 2 != 0:
-            odd_indecies_num.append(items[index])
+            odd_indices_num.append(items[index])
 
-    return odd_indecies_num
+    return odd_indices_num
 
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+
+    item_num = 1
+    for item in items:
+       
+        print(f' {item_num}. {item}')
+        item_num += 1
+
+
+print(print_as_numbered_list(['bird', 'pear tree', 'gift', 'coffee']))
+#
 
 
 def get_range(start, stop):

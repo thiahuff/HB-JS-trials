@@ -49,7 +49,7 @@ function getOddIndices(items) {
   return result;
 }
 
-console.log(getOddIndices([2,5,7,9,10]))
+// console.log(getOddIndices([2,5,7,9,10]))
 
 
 // Given an array, output a numbered list.
